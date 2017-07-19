@@ -9,9 +9,10 @@ export const ActionCreators = {
 
 export type State = {
   readonly accountId?: string;
+  readonly test: string;
 };
 
-export const initialState: State = {};
+export const initialState: State = { test: 'hihi'};
 
 export default function reducer(state: State = initialState, action: ReduxAction): State {
   let partialState: Partial<State> | undefined;
